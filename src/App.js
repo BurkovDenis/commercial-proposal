@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {Field, reduxForm} from "redux-form";
+import React from "react";
+import PersonalForm from "./form/PersonalForm";
+import ClimbingWallForm from "./form/ClimbingWallForm";
+import ConstructionTypeForm from "./form/ConstructionTypeForm";
+import Typical from "./form/TypicalForm";
+import DeliveryForm from "./form/DeliveryForm";
+import ClimbingTypeForm from "./form/ClimbingTypeForm";
+import DistanceForm from "./form/DistanceForm";
+import DeliveryCostForm from "./form/DeliveryCostForm";
+import AssemblageCostForm from "./form/AssemblageCostForm";
+import AssemblageForm from "./form/AssemblageForm";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let App = () => {
+    return (
+        <div>
+            <PersonalForm/>
+            <ConstructionTypeForm/>
+            <Typical/>
+            <ClimbingTypeForm/>
+            <ClimbingWallForm/>
+            <DeliveryForm/>
+            <DistanceForm/>
+            <DeliveryCostForm/>
+            <AssemblageForm/>
+            <AssemblageCostForm/>
+        </div>
+    )
+
 }
 
-export default App;
+export default App
